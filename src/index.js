@@ -30,13 +30,10 @@ module.exports = function toReadable(number) {
         90: "ninety",
         100: "hundred",
     };
-
     if (number <= 20) {
         return digits[number];
     }
-
     const numberString = number.toString();
-
     if (number <= 99) {
         if (numberString[1] > 0) {
             return `${digits[numberString[0] + "0"]} ${
